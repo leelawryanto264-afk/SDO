@@ -23,3 +23,15 @@ app.command("/galactic-help", async ({ ack, respond }) => {
     await respond({ text: "Failed to get transmission." });
   }
 });
+
+const puzzle=[
+  {
+    transmission= "KHOOR",
+    answer= "HELLO",
+    hint= "Caessar Cipher (+3)"
+  }
+];
+(async () => {
+  await app.start();
+  console.log("bot is running!");
+})();
