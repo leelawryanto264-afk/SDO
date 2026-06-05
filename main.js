@@ -24,13 +24,13 @@ app.command("/galactic-help", async ({ ack, respond }) => {
   }
 });
 
-const puzzle=[
+/*const puzzle=[
   {
     transmission= "KHOOR",
     answer= "HELLO",
     hint= "Caessar Cipher (+3)"
   }
-];
+];*/
 (async () => {
   await app.start();
   console.log("bot is running!");
