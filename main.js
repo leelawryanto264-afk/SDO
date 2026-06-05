@@ -4,7 +4,7 @@ const { App } = require("@slack/bolt");
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  apptoken: process.env.APP_LEVEL_TOKEN,
+  appToken: process.env.APP_LEVEL_TOKEN,
   socketMode: true,
 });
 
@@ -27,3 +27,8 @@ app.command("/galactic-help", async ({ ack, respond }) => {
     hint= "Caessar Cipher (+3)"
   }
 ];*/
+
+(async () => {
+  await app.start();
+  console.log("bot is running!");
+})();
