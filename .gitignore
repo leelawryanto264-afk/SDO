@@ -1,0 +1,21 @@
+# Dependencies (Massive folders)
+node_modules/
+node-v24.16.0-linux-x64/
+
+# Environment variables (Security secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs (Generated files)
+dist/
+build/
+.next/
+out/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
