@@ -9,19 +9,15 @@ const app = new App({
 });
 
 app.command("/galactic-help", async ({ ack, respond }) => {
-  ack();
-  try {
-    await respond({
-      text: `
-      Available commands:
-      /galactic-help - Show all commands
-      /transmission - Encrypted message
-      /answer - Submit answer
-      /hint - Shows hint`,
-    });
-  } catch (err) {
-    await respond({ text: "Failed to get transmission." });
-  }
+  await ack();
+  await respond({
+    text: `
+    Available commands:
+    /galactic-help - Show all commands
+    /transmission - Encrypted message
+    /answer - Submit answer
+    /hint - Shows hint`,
+  });
 });
 
 /*const puzzle=[
@@ -31,7 +27,3 @@ app.command("/galactic-help", async ({ ack, respond }) => {
     hint= "Caessar Cipher (+3)"
   }
 ];*/
-(async () => {
-  await app.start();
-  console.log("bot is running!");
-})();
