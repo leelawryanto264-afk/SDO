@@ -1,0 +1,90 @@
+```text
+███████╗██████╗  ██████╗
+██╔════╝██╔══██╗██╔═══██╗
+███████╗██║  ██║██║   ██║
+╚════██║██║  ██║██║   ██║
+███████║██████╔╝╚██████╔╝
+╚══════╝╚═════╝  ╚═════╝
+
+  _     _
+ /_\(_)/_\
+<={ [o] }=>
+ \_/   \_/
+  ▲     ▲
+ / \   / \
+
+```
+
+Space Decrypter Officer
+
+[Link to Repo](https://github.com/leelawryanto264-afk/SDO)
+
+About
+Earth has received a series of encrypted alien transmissions.
+As a newly appointed Space Decrypter Officer, your mission is to decipher every transmission.
+Each successful transmission uncovers another piece of the story while introducing a new cipher system to master.
+Developed for the 2026 Stardance Challenge
+
+---
+
+Installation
+
+git clone https://github.com/leelawryanto264-afk/SDO
+install npm
+node main.js
+
+---
+
+Features
+
+- 10 story-driven transmissions
+- Caesar, Atbash, Morse, Binary, and Vigenere ciphers
+- Tracks progress using SQLite
+- Unlockable cipher handbook
+- Officer ranks and transmission logs
+
+---
+
+Slack Commands
+
+/sdo-transmission - View current transmission
+/sdo-answer - Submit your answer
+/sdo-hint - View a hint
+/sdo-handbook - View unlocked cipher information
+/sdo-log - View decoded transmissions
+/sdo-profile - View rank and progress
+
+---
+
+How to Play
+
+1.  Run /sdo-transmission
+2.  Decode the message
+3.  Submit answer with /sdo-answer
+4.  Use /sdo-hint or /sdo-handbook if needed
+5.  Type /sdo-log to see past transmissions and /sdo-profile to check stats
+6.  Complete all transmissions
+
+---
+
+Example
+
+![/sdo-transmission](images/incoming_transmission.png)
+
+![/sdo-answer](images/answer.png)
+
+![/sdo-handbook](images/cipher.png)
+
+![/sdo-profile](images/profile.png)
+
+---
+
+Tech Used
+
+Slack Bolt
+Node.js
+Socket Mode
+SQLite
+better-sqlite3
+JavaScript
+GitHub
